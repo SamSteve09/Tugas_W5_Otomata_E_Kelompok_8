@@ -1,0 +1,41 @@
+{
+    "states": [
+        "q0",
+        "q1",
+        "q2"
+    ],
+    "transitions": {
+        "q0": {
+            "0": {
+                "next_state": "q1",
+                "output": "A"
+            },
+            "1": {
+                "next_state": "q2",
+                "output": "B"
+            }
+        },
+        "q1": {
+            "0": {
+                "next_state": "q0",
+                "output": "B"
+            },
+            "1": {
+                "next_state": "q2",
+                "output": "C"
+            }
+        },
+        "q2": {
+            "0": {
+                "next_state": "q1",
+                "output": "C"
+            },
+            "1": {
+                "next_state": "q0",
+                "output": "A"
+            }
+        }
+    },
+    "initial_state": "q0",
+    "input_sequence": "011001"
+}
